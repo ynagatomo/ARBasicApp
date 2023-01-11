@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA008BD1296E737C00896C0A /* AnimatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA008BD0296E737C00896C0A /* AnimatingModel.swift */; };
+		BAFB9FB6296A74CA00F9165E /* arbasicappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FB5296A74CA00F9165E /* arbasicappApp.swift */; };
+		BAFB9FB8296A74CA00F9165E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FB7296A74CA00F9165E /* ContentView.swift */; };
+		BAFB9FBA296A74CB00F9165E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FB9296A74CB00F9165E /* Assets.xcassets */; };
+		BAFB9FBD296A74CB00F9165E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FBC296A74CB00F9165E /* Preview Assets.xcassets */; };
+		BAFB9FC9296A816500F9165E /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FC8296A816500F9165E /* ARViewController.swift */; };
+		BAFB9FCC296A82A600F9165E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FCB296A82A600F9165E /* Log.swift */; };
+		BAFB9FCE296A835A00F9165E /* ARContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FCD296A835A00F9165E /* ARContainerView.swift */; };
+		BAFB9FD1296ACB2200F9165E /* ARScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FD0296ACB2200F9165E /* ARScene.swift */; };
+		BAFB9FD3296AD49300F9165E /* ARSceneSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FD2296AD49300F9165E /* ARSceneSpec.swift */; };
+		BAFB9FD5296B991E00F9165E /* ARContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FD4296B991E00F9165E /* ARContentView.swift */; };
+		BAFB9FD8296B9ECE00F9165E /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FD7296B9ECE00F9165E /* toy_robot_vintage.usdz */; };
+		BAFB9FDA296B9ED600F9165E /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FD9296B9ED600F9165E /* toy_biplane.usdz */; };
+		BAFB9FDC296BF65900F9165E /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB9FDB296BF65900F9165E /* AppConfig.swift */; };
+		BAFB9FE0296C2F2100F9165E /* planeSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FDE296C2F2100F9165E /* planeSound.mp3 */; };
+		BAFB9FE1296C2F2100F9165E /* robotSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FDF296C2F2100F9165E /* robotSound.mp3 */; };
+		BAFB9FEA296C4A2600F9165E /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FE9296C4A2600F9165E /* toy_car.usdz */; };
+		BAFB9FEC296C4F4A00F9165E /* carSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAFB9FEB296C4F4A00F9165E /* carSound.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA008BD0296E737C00896C0A /* AnimatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingModel.swift; sourceTree = "<group>"; };
+		BAFB9FB2296A74CA00F9165E /* arbasicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbasicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFB9FB5296A74CA00F9165E /* arbasicappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arbasicappApp.swift; sourceTree = "<group>"; };
+		BAFB9FB7296A74CA00F9165E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAFB9FB9296A74CB00F9165E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAFB9FBC296A74CB00F9165E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAFB9FC3296A75C000F9165E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BAFB9FC5296A7C9500F9165E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BAFB9FC8296A816500F9165E /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		BAFB9FCB296A82A600F9165E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		BAFB9FCD296A835A00F9165E /* ARContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContainerView.swift; sourceTree = "<group>"; };
+		BAFB9FD0296ACB2200F9165E /* ARScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScene.swift; sourceTree = "<group>"; };
+		BAFB9FD2296AD49300F9165E /* ARSceneSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneSpec.swift; sourceTree = "<group>"; };
+		BAFB9FD4296B991E00F9165E /* ARContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContentView.swift; sourceTree = "<group>"; };
+		BAFB9FD7296B9ECE00F9165E /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		BAFB9FD9296B9ED600F9165E /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		BAFB9FDB296BF65900F9165E /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		BAFB9FDE296C2F2100F9165E /* planeSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = planeSound.mp3; sourceTree = "<group>"; };
+		BAFB9FDF296C2F2100F9165E /* robotSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = robotSound.mp3; sourceTree = "<group>"; };
+		BAFB9FE9296C4A2600F9165E /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		BAFB9FEB296C4F4A00F9165E /* carSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = carSound.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFB9FAF296A74CA00F9165E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAFB9FA9296A74CA00F9165E = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FC3296A75C000F9165E /* README.md */,
+				BAFB9FB4296A74CA00F9165E /* arbasicapp */,
+				BAFB9FB3296A74CA00F9165E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAFB9FB3296A74CA00F9165E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FB2296A74CA00F9165E /* arbasicapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFB9FB4296A74CA00F9165E /* arbasicapp */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FDD296C2F1200F9165E /* SoundAssets */,
+				BAFB9FD6296B9EBC00F9165E /* ModelAssets */,
+				BAFB9FC5296A7C9500F9165E /* Info.plist */,
+				BAFB9FED296C53C000F9165E /* App */,
+				BAFB9FC6296A811200F9165E /* Views */,
+				BAFB9FCF296ACB0500F9165E /* AR Scenes */,
+				BAFB9FCA296A828300F9165E /* Utilities */,
+				BAFB9FB9296A74CB00F9165E /* Assets.xcassets */,
+				BAFB9FBB296A74CB00F9165E /* Preview Content */,
+			);
+			path = arbasicapp;
+			sourceTree = "<group>";
+		};
+		BAFB9FBB296A74CB00F9165E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FBC296A74CB00F9165E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAFB9FC6296A811200F9165E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FB7296A74CA00F9165E /* ContentView.swift */,
+				BAFB9FC7296A812900F9165E /* AR Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAFB9FC7296A812900F9165E /* AR Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FD4296B991E00F9165E /* ARContentView.swift */,
+				BAFB9FCD296A835A00F9165E /* ARContainerView.swift */,
+				BAFB9FC8296A816500F9165E /* ARViewController.swift */,
+			);
+			path = "AR Views";
+			sourceTree = "<group>";
+		};
+		BAFB9FCA296A828300F9165E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FCB296A82A600F9165E /* Log.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BAFB9FCF296ACB0500F9165E /* AR Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FD0296ACB2200F9165E /* ARScene.swift */,
+				BA008BD0296E737C00896C0A /* AnimatingModel.swift */,
+				BAFB9FD2296AD49300F9165E /* ARSceneSpec.swift */,
+			);
+			path = "AR Scenes";
+			sourceTree = "<group>";
+		};
+		BAFB9FD6296B9EBC00F9165E /* ModelAssets */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FD9296B9ED600F9165E /* toy_biplane.usdz */,
+				BAFB9FD7296B9ECE00F9165E /* toy_robot_vintage.usdz */,
+				BAFB9FE9296C4A2600F9165E /* toy_car.usdz */,
+			);
+			path = ModelAssets;
+			sourceTree = "<group>";
+		};
+		BAFB9FDD296C2F1200F9165E /* SoundAssets */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FDE296C2F2100F9165E /* planeSound.mp3 */,
+				BAFB9FDF296C2F2100F9165E /* robotSound.mp3 */,
+				BAFB9FEB296C4F4A00F9165E /* carSound.mp3 */,
+			);
+			path = SoundAssets;
+			sourceTree = "<group>";
+		};
+		BAFB9FED296C53C000F9165E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB9FB5296A74CA00F9165E /* arbasicappApp.swift */,
+				BAFB9FDB296BF65900F9165E /* AppConfig.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAFB9FB1296A74CA00F9165E /* arbasicapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFB9FC0296A74CB00F9165E /* Build configuration list for PBXNativeTarget "arbasicapp" */;
+			buildPhases = (
+				BAFB9FAE296A74CA00F9165E /* Sources */,
+				BAFB9FAF296A74CA00F9165E /* Frameworks */,
+				BAFB9FB0296A74CA00F9165E /* Resources */,
+				BAFB9FC4296A7A2F00F9165E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = arbasicapp;
+			productName = arbasicapp;
+			productReference = BAFB9FB2296A74CA00F9165E /* arbasicapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFB9FAA296A74CA00F9165E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BAFB9FB1296A74CA00F9165E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BAFB9FAD296A74CA00F9165E /* Build configuration list for PBXProject "arbasicapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAFB9FA9296A74CA00F9165E;
+			productRefGroup = BAFB9FB3296A74CA00F9165E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFB9FB1296A74CA00F9165E /* arbasicapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFB9FB0296A74CA00F9165E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFB9FBD296A74CB00F9165E /* Preview Assets.xcassets in Resources */,
+				BAFB9FEC296C4F4A00F9165E /* carSound.mp3 in Resources */,
+				BAFB9FBA296A74CB00F9165E /* Assets.xcassets in Resources */,
+				BAFB9FEA296C4A2600F9165E /* toy_car.usdz in Resources */,
+				BAFB9FDA296B9ED600F9165E /* toy_biplane.usdz in Resources */,
+				BAFB9FE0296C2F2100F9165E /* planeSound.mp3 in Resources */,
+				BAFB9FD8296B9ECE00F9165E /* toy_robot_vintage.usdz in Resources */,
+				BAFB9FE1296C2F2100F9165E /* robotSound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAFB9FC4296A7A2F00F9165E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFB9FAE296A74CA00F9165E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFB9FDC296BF65900F9165E /* AppConfig.swift in Sources */,
+				BAFB9FC9296A816500F9165E /* ARViewController.swift in Sources */,
+				BAFB9FB8296A74CA00F9165E /* ContentView.swift in Sources */,
+				BAFB9FCC296A82A600F9165E /* Log.swift in Sources */,
+				BA008BD1296E737C00896C0A /* AnimatingModel.swift in Sources */,
+				BAFB9FB6296A74CA00F9165E /* arbasicappApp.swift in Sources */,
+				BAFB9FCE296A835A00F9165E /* ARContainerView.swift in Sources */,
+				BAFB9FD1296ACB2200F9165E /* ARScene.swift in Sources */,
+				BAFB9FD3296AD49300F9165E /* ARSceneSpec.swift in Sources */,
+				BAFB9FD5296B991E00F9165E /* ARContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAFB9FBE296A74CB00F9165E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAFB9FBF296A74CB00F9165E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAFB9FC1296A74CB00F9165E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"arbasicapp/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arbasicapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Basic App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app will use the camera for AR.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.arbasicapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAFB9FC2296A74CB00F9165E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"arbasicapp/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arbasicapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Basic App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app will use the camera for AR.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.arbasicapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFB9FAD296A74CA00F9165E /* Build configuration list for PBXProject "arbasicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFB9FBE296A74CB00F9165E /* Debug */,
+				BAFB9FBF296A74CB00F9165E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFB9FC0296A74CB00F9165E /* Build configuration list for PBXNativeTarget "arbasicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFB9FC1296A74CB00F9165E /* Debug */,
+				BAFB9FC2296A74CB00F9165E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAFB9FAA296A74CA00F9165E /* Project object */;
+}
