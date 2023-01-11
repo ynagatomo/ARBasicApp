@@ -32,7 +32,7 @@ final class ARScene {
                     .sink(receiveCompletion: { _ in
                         // handle error
                     }, receiveValue: { [weak self] (entity, audioFileResource) in
-                        debugLog("AR: ARSCENE: An entity and a sound were loaded asynchronously.")
+                        // debugLog("AR: ARSCENE: An entity and a sound were loaded asynchronously.")
                         self?.animatingModels.append(AnimatingModel(entity: entity,
                                                                     animationParam: modelSpec.animationParam))
                         self?.anchorEntity.addChild(entity)
@@ -53,7 +53,7 @@ final class ARScene {
                     .sink(receiveCompletion: { _ in
                         // handle error
                     }, receiveValue: { [weak self] entity in
-                        debugLog("AR: ARSCENE: An entity was loaded asynchronously.")
+                        // debugLog("AR: ARSCENE: An entity was loaded asynchronously.")
                         self?.animatingModels.append(AnimatingModel(entity: entity,
                                             animationParam: modelSpec.animationParam))
                         self?.anchorEntity.addChild(entity)
@@ -67,38 +67,15 @@ final class ARScene {
                     .store(in: &loadingSubscriptions)
             }
         }
-
-//        ARSceneSpec.models.forEach { modelSpec in
-//            Entity.loadAsync(named: modelSpec.fileName)
-//                .sink(receiveCompletion: { _ in
-//                    // handle error
-//                }, receiveValue: { [weak self] entity in
-//                    debugLog("AR: ARSCENE: An entity was loaded asynchronously.")
-//                    self?.animatingModels.append(AnimatingModel(entity: entity,
-//                                        animationParam: modelSpec.animationParam))
-//                    self?.anchorEntity.addChild(entity)
-//
-//                    entity.availableAnimations.forEach { animation in
-//                        entity.playAnimation(animation.repeat(),
-//                                             transitionDuration: 0,
-//                                             startsPaused: false)
-//                    }
-//                })
-//                .store(in: &loadingSubscriptions)
-//        }
     }
 
-//    func update(sceneScale: SIMD3<Float>) {
-//        anchorEntity.scale = sceneScale
-//    }
+    //    func show() {
+    //        anchorEntity.isEnabled = true
+    //    }
 
-//    func show() {
-//        anchorEntity.isEnabled = true
-//    }
-//
-//    func hide() {
-//        anchorEntity.isEnabled = false
-//    }
+    //    func hide() {
+    //        anchorEntity.isEnabled = false
+    //    }
 
     func updateFrameAnimation(deltaTime: Double) {
         accumulatedTime += deltaTime
