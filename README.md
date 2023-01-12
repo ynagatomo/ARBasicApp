@@ -167,6 +167,8 @@ This must be done by the developer using ARKit's Delegate calls.
 
 See below, General description of AR State, for details.
 
+![Image](assets/st0.png)
+
 
 
 ## General description of AR State
