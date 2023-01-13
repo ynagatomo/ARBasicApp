@@ -9,13 +9,17 @@ import RealityKit
 import Combine
 
 final class ARScene {
-    private let anchorEntity: AnchorEntity
+    let anchorEntity: AnchorEntity
     private var accumulatedTime: Double = 0.0 // [sec]
     private var loadingSubscriptions: Set<AnyCancellable> = []
     private var animatingModels: [AnimatingModel] = []
 
     init(anchorEntity: AnchorEntity) {
         self.anchorEntity = anchorEntity
+    }
+
+    func setScale(_ scale: SIMD3<Float>) {
+        anchorEntity.scale = scale
     }
 
     func loadModels() {

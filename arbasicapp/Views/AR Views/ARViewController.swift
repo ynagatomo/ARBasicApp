@@ -10,13 +10,13 @@ import ARKit
 import RealityKit
 import Combine
 
+// swiftlint:disable file_length
 class ARViewController: UIViewController {
     private var sceneScale: SIMD3<Float> = .zero
 
     private var arView: ARView!
     private let arCoachingView = ARCoachingOverlayView()
 
-    private var anchorEntity: AnchorEntity?
     private var arScene: ARScene?
     private var frameLoopSubscription: Cancellable?
 
@@ -121,7 +121,7 @@ extension ARViewController {
     func update(sceneScale: SIMD3<Float>) {
         // debugLog("AR: ARVC: update(sceneScale:) was called. sceneScale = \(sceneScale)")
         self.sceneScale = sceneScale
-        anchorEntity?.scale = sceneScale
+        arScene?.setScale(sceneScale)
     }
 }
 
@@ -134,6 +134,7 @@ extension ARViewController {
 
             #if !targetEnvironment(simulator)
             if !ProcessInfo.processInfo.isiOSAppOnMac {
+                // running on iOS or iPadOS
                 guard let query = arView.makeRaycastQuery(from: location,
                                                           allowing: .estimatedPlane,
                                                           alignment: .any) else {
@@ -143,43 +144,57 @@ extension ARViewController {
                 if let result = raycastResults.first {
 
                     // [Note] result.anchor: ARAnchor? can not be casted to ARPlaneAnchor
+                    // - if query's allowing is .existingPlaneInfinit, result.anchor will be ARPlaneAnchor
+                    // - if query's allowing is .estimatedPlane, resutl.anchor will be nil
 
-                    placeARScene(transform: result.worldTransform)
+                    let anchorEntity = AnchorEntity(raycastResult: result)
+                    placeARScene(anchorEntity)
                 } else {
-                    // do nothing
+                    // do nothing (no raycast result)
                 }
             } else {
-                placeARScene(transform: AppConfig.simModelTransform)
+                // running on macOS
+                if arScene == nil {
+                    let anchorEntity = AnchorEntity(world: AppConfig.simModelTransform)
+                    placeARScene(anchorEntity)
+                } else {
+                    // do nothing (already ARScene exists)
+                }
             }
             #else
-            placeARScene(transform: AppConfig.simModelTransform)
+            // running in the Simulator
+            if arScene == nil {
+                let anchorEntity = AnchorEntity(world: AppConfig.simModelTransform)
+                placeARScene(anchorEntity)
+            } else {
+                // do nothing (already ARScene exists)
+            }
             #endif
         } else {
-            // do nothing
+            // do nothing (the gesture is not ended yet)
         }
     }
 
-    private func placeARScene(transform: float4x4) {
-        removeARScene()
+    private func placeARScene(_ anchorEntity: AnchorEntity) {
+        if arScene != nil {
+            removeARScene()
+        }
 
-        let anchor = AnchorEntity(world: transform)
-        anchor.scale = sceneScale
-        arView.scene.addAnchor(anchor)
-        anchorEntity = anchor
+        arView.scene.addAnchor(anchorEntity)
 
-        arScene = ARScene(anchorEntity: anchor)
+        arScene = ARScene(anchorEntity: anchorEntity)
+        arScene?.setScale(sceneScale)
         arScene?.loadModels()
         startFrameLoop()
     }
 
     private func removeARScene() {
-        guard let currentAnchorEntity = anchorEntity else { return }
         assert(arScene != nil)
+        guard let arScene else { return }
 
         stopFrameLoop()
-        arView.scene.removeAnchor(currentAnchorEntity)
-        anchorEntity = nil
-        arScene = nil
+        arView.scene.removeAnchor(arScene.anchorEntity)
+        self.arScene = nil
     }
 }
 

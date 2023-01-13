@@ -14,7 +14,7 @@ No special features are used, so you can easily make it compatible with iOS 15/m
 
 ## Change Log
 
-none
+- v1.0.1: 2023-01-13 [Changed] to make simple: AnchorEntity(world:) -> AnchorEntity(raycastResult:)
 
 ## Abstract
 
